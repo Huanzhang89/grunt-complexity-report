@@ -29,7 +29,8 @@
     "violation-reporter": "0.0.1"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "^0.11.2"
+    "grunt-contrib-jshint": "^0.11.2",
+    "typhonjs-escomplex": "0.0.12"
   },
   "keywords": [
     "gruntplugin",

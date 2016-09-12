@@ -1,5 +1,5 @@
 /*global module:false*/
-var cr = require('complexity-report');
+var escomplex = require('typhonjs-escomplex');
 
 module.exports = function(grunt) {
 
@@ -147,7 +147,7 @@ module.exports = function(grunt) {
         var content = grunt.file.read(filepath);
         return {
           filepath: filepath,
-          analysis: cr.run(content, options)
+          analysis: escomplex.run(content, options)
         };
       }).sort(function (info1, info2) {
         return info1.analysis.maintainability - info2.analysis.maintainability;
